@@ -1,0 +1,61 @@
+$redLightColor = #f2333a
+$greyColor = #333
+$greyDarkColor = #3b3b3b
+
+html
+body
+  height: 100%
+  margin: 0
+  padding: 0
+
+body
+  width: 100%
+  heigth: auto
+  background-color: $greyColor
+  font-family: $fontOne, sans-serif
+  overflow: auto
+
+  &.fixed
+    overflow: hidden
+
+  ul
+  li
+    list-style-type: none
+
+  a
+    cursor: pointer
+    color: inherit
+    text-decoration: none
+
+*.red-selection
+  color: $redLightColor
+  font-size: inherit
+
+*.white-selection
+  font-weight: 400
+  font-size: inherit
+
+.block
+  width: 100%
+  position: relative
+  overflow: hidden
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+
+  &.black-block
+    color: #fff
+
+  .block-color
+    width: 100%
+    height: 100%
+
+  .block-inner
+    width: 1024px
+    height: 100%
+    margin: 0 auto
+    box-sizing: border-box
+    padding: 0
+    position: relative
+    z-index: 50
+    clearfix()
