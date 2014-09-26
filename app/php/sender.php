@@ -1,5 +1,5 @@
 ﻿<?php
-  $to = 'marat.fakhreev@gmail.com';
+  $to = 'davlet@praktikabs.ru';
   $subject = $_GET['subject'];
   $message = $_GET['data'];
   mail($to, $subject, $message);
